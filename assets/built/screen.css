@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+body{
+  font-family: 'Poppins', sans-serif; 
+}
+
+h1{
+  color:blue;
+}
+
+.content{}
+.content--small{
+  width: 60em;
+  margin-left: auto;
+  margin-right: auto;
+}
+.content__head{
+  margin-bottom: 4rem;
+  border-bottom: solid 6px blue;
+}
+.content__head h1 {
+  color: blue;
+  font-weight: 600;
+  font-size: 59px;
+  width: 70%;
+  line-height: 1.15;
+  
+  /*padding-bottom: 0rem;*/
+}
+.content__head--link{
+  text-decoration: none;
+  border-bottom: solid 4px;
+}
+
+.post-full-title{
+  font-size: 61px;
+  line-height: 1.25;
+}
+
+.home-template .post-card-title {
+  text-decoration: none;
+  border-bottom: 0;
+  font-weight: 600;
+  color: black;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  font-size: 34px;
+}
+/*.home-template .post-card-tags {
+  color: #989ea0;
+}*/
+
+.home-template .post-card-tags {
+  color: blue;
+  opacity: 0.45;
+}
+
+.home-template .post-card-content {
+  margin-bottom: 4rem;
+  font-size: 108.5%;
+  border-bottom: solid 1px blue;
+  padding-bottom: 1.5rem;
+}
+
+.site-footer-nav {
+  display: inline-block;
+  float: right;
+}
+.copyright {
+  padding-bottom: 2rem;
+  display: inline-block;
+}
+
+.post-template .content__head h1{
+  color: blue;
+  font-weight: 600;
+  font-size: 59px;
+  width: 70%;
+  line-height: 1.15;
+  border-bottom: solid 2px;
+  padding-bottom: 2rem;
+  margin-top: 0;
+  color: #fff;
+  font-size: 24px;
+  padding-top: 2rem;
+}
+.post-template .content__head {
+  margin-bottom: 4rem;
+  border-bottom: 0;
+}
+
+.post-template .post-full-title {
+  font-size: 48px;
+  line-height: 1.25;
+  font-weight: 600;
+}
+
+.post-full-content{
+  font-size: 19px;
+  color: #000;
+}
+
+.post-card-excerpt {
+  color: #444;
+}
+.post-card-tags {
+  color: #53a541;
+}
+.post-card-excerpt p {
+  margin-top: 0;
+}
+.post-card-content-link {
+  text-decoration: none;
+}
+.post-card-content {
+  margin-bottom: 4rem;
+}
+.post-card-author {
+  font-size: 17px;
+}
+.post-card-author a {
+  font-size: 17px;
+  text-decoration: none;
+  /*border-bottom: solid 1px;*/
+  text-transform: lowercase;
+  color: #757575;
+}
+
+body{
+  margin: 0;
+}
+
+.inner {
+  background-color: blue;
+  color: #fff !important;
+}
+.content__title--small{
+  font-size: 40%;
+}
+
+h2 {
+  font-weight: 100;
+  font-size: 38px;
+  color: #795548;
+}

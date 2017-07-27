@@ -1,0 +1,24 @@
+{{!< default}}
+{{!-- The tag above means: insert everything in this file
+into the {body} of the default.hbs template --}}
+<div class="content content--small">
+  <div class="content__head">
+    <a class="content__head--link" href="/">
+      <h1>The Art of Living & Helping</h1>
+    </a>
+  </div>
+</div>
+
+{{!-- The main content area --}}
+<main class="content content--small" role="main">
+    <div class="inner__">
+        <div class="post-feed">
+          {{#foreach posts}}
+
+            {{!-- The tag below includes the markup for each post - partials/post-card.hbs --}}
+            {{> "post-card"}}
+
+          {{/foreach}}
+        </div>
+    </div>
+</main>
