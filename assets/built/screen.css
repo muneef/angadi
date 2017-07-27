@@ -69,7 +69,7 @@ h1{
 }*/
 
 .home-template .post-card-tags {
-  color: blue;
+  color: #333;
   opacity: 0.45;
 }
 
@@ -82,7 +82,7 @@ h1{
 
 .read-next.outer {
   background-color: blue;
-  margin-top: 3rem;
+  margin-top: 6rem;
   padding-top: 3rem;
   margin-bottom: 3rem;
 }
@@ -190,6 +190,15 @@ h1{
   margin-bottom: 4rem;
   padding-bottom: 3rem;
 }
+
+.post-card-content:hover .post-card-tags {
+  color: blue;
+  opacity: 0.45;
+}
+.post-card-content:hover h2.post-card-title{
+  color: blue;
+}
+
 .post-card-author {
   font-size: 17px;
 }
@@ -200,6 +209,7 @@ h1{
 
 body{
   margin: 0;
+  background-color: #f2f7f2;
 }
 
 .inner {
