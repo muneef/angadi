@@ -46,6 +46,24 @@ h1{
   margin-top: 0px;
   font-size: 34px;
 }
+
+.author-profile-image{
+  width: 24px;
+  height: 24px;
+  border-radius: 8em;
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 8px;
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+}
+
+.post-card-author a {
+  font-size: 17px;
+  text-decoration: none;
+  /* border-bottom: solid 1px; */
+  color: black;
+}
 /*.home-template .post-card-tags {
   color: #989ea0;
 }*/
@@ -69,7 +87,15 @@ h1{
 .copyright {
   padding-bottom: 2rem;
   display: inline-block;
+  color: #474747;
 }
+.copyright a{
+  text-decoration: none;
+  color: blue;
+  display: inline-block;
+  margin-right: 8px;
+}
+
 
 .post-template .content__head h1{
   color: blue;
@@ -121,9 +147,6 @@ h1{
 .post-card-author a {
   font-size: 17px;
   text-decoration: none;
-  /*border-bottom: solid 1px;*/
-  text-transform: lowercase;
-  color: #757575;
 }
 
 body{

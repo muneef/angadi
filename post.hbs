@@ -42,9 +42,7 @@ into the {body} of the default.hbs template --}}
                 {{content}}
             </section>
 
-            <footer class="post-full-footer">
-                Footer
-            </footer>
+            
 
             {{!--
 
@@ -80,19 +78,11 @@ into the {body} of the default.hbs template --}}
         <div class="read-next-feed">
 
             {{#get "posts" filter="tags:{{tags.[0].slug}}+id:-{{id}}" limit="3"}}
-                <article class="read-next-card"
-                    {{#if ../tags.[0].feature_image}}
-                        style="background-image: url({{../tags.[0].feature_image}})"
-                    {{else}}
-                        {{#if @blog.cover_image}}
-                            style="background-image: url({{@blog.cover_image}})"{{/if}}
-                    {{/if}}
-                >
+                <article class="read-next-card">
                     <header class="read-next-card-header">
                         <small class="read-next-card-header-sitetitle">&mdash; {{@blog.title}} &mdash;</small>
                         <h3 class="read-next-card-header-title"><a href="{{@blog.url}}/tag/{{../tags.[0].slug}}/">{{../tags.[0].name}}</a></h3>
                     </header>
-                    <div class="read-next-divider">{{> "icons/infinity"}}</div>
                     <div class="read-next-card-content">
                         <ul>
                             {{#foreach posts}}
