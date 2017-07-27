@@ -74,7 +74,7 @@ into the {body} of the default.hbs template --}}
 
 {{!-- Links to Previous/Next posts --}}
 <aside class="read-next outer">
-    <div class="inner">
+    <div class="content--small">
         <div class="read-next-feed">
 
             {{#get "posts" filter="tags:{{tags.[0].slug}}+id:-{{id}}" limit="3"}}
