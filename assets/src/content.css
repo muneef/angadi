@@ -1,0 +1,25 @@
+.content{}
+.content{ 
+  &--small{  
+    lost-center: 60em;
+  }
+  &__head{
+    margin-bottom: 4rem;
+    border-bottom: solid 6px blue;
+    &--link{
+      text-decoration: none;
+      border-bottom: solid 4px;
+    }
+  }
+  &__head{
+    h1 {
+      color: blue;
+      font-weight: 600;
+      font-size: 59px;
+      width: 70%;
+      line-height: 1.15;
+      
+      /*padding-bottom: 0rem;*/
+    }
+  }  
+}

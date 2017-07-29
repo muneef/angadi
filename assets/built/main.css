@@ -1,0 +1,165 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins);/* Base */
+
+body { 
+  margin:0;
+  font-family: 'Poppins', sans-serif;
+}
+
+/*  Content */
+
+/*  Content */
+
+.Content--container{  
+    max-width: 60em;  
+    margin-left: auto;  
+    margin-right: auto;
+  }
+
+.Content--container:before{  
+    content: '';  
+    display: table;
+  }
+
+.Content--container:after{  
+    content: '';  
+    display: table;  
+    clear: both;
+  }
+
+.Content__head{
+    margin-bottom: 4rem;
+  }
+
+.Content__head--link{
+      text-decoration: none;
+      border-bottom: solid 4px;
+    }
+
+.Content__title{
+    color: #fff;
+    font-weight: 600;
+    font-size: 59px;
+    min-width: 70%;
+    line-height: 1.15;
+  }
+
+/*  Post */
+
+.Post--full .Post__title {
+      margin-top: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+
+.Post__title{
+    font-size: 61px;
+    line-height: 1.25;    
+  }
+
+.Post__meta {
+    display: inline-block;
+    margin-top: 1.5rem;
+  }
+
+/* Profile */
+.AuthorProfile__image{
+    width: 32px;
+    height: 32px;
+    display: inline-block;
+    border-radius: 3em;
+    vertical-align: top;
+    margin-right: 14px;
+  }
+
+/*  Post Card */
+
+/* Author */
+
+.PostCard__author {
+    font-size: 17px;
+  }
+
+.PostCard__author a {
+    font-size: 17px;
+    text-decoration: none;
+  }
+
+.PostCard__title {
+    text-decoration: none;
+    border-bottom: 0;
+    font-weight: 600;
+    color: black;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    font-size: 34px;
+    /*font-size: 61px;*/
+    line-height: 1.25;
+  }
+
+.PostCard__link {
+    text-decoration: none;
+  }
+
+.PostCard__excerpt {
+    color: #444;
+    margin-top: 12px;
+  }
+
+.PostCard__excerpt p {
+      margin-top: 0;
+    }
+
+.PostCard__tags {
+    color: #999;
+    margin-bottom: 4px;
+    display: inline-block;
+  }
+
+.PostCard__content {
+    margin-bottom: 4rem;
+    padding-bottom: 3rem;
+    border-bottom: solid 3px #efefef;    
+  }
+
+.PostCard__content:hover {
+      border-bottom: solid 3px blue; 
+    };
+
+.PostCard__content:hover .PostCard__tags {
+        color: blue;
+        opacity: 0.45;
+      }
+
+.PostCard__content:hover .PostCard__title{
+        color: blue;
+      }
+
+.InnerContent{
+  margin-top: 2rem;
+}
+
+.Header{
+  background-color: blue;
+  color: #fff;
+  height: 127px;
+}
+
+.Header--inner{
+    background-color: blue;
+    color: #fff;
+    height: 100px;
+  }
+
+.Header--inner .Content__title{
+      color: #fff;
+      font-weight: 600;
+      font-size: 59px;
+      min-width: 70%;
+      line-height: 1.15;
+      font-size: 30px;
+      opacity: 0.7;
+      padding-top: 16px;
+    }
+
+.Header--inner .Content__head{
+      margin-bottom: 2rem;
+    }
