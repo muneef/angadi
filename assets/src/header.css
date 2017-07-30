@@ -1,0 +1,23 @@
+.Header{
+  background-color: blue;
+  color: #fff;
+  height: 127px;
+  &--inner{
+    background-color: blue;
+    color: #fff;
+    height: 100px;
+    .Content__title{
+      color: #fff;
+      font-weight: 600;
+      font-size: 59px;
+      min-width: 70%;
+      line-height: 1.15;
+      font-size: 30px;
+      opacity: 0.7;
+      padding-top: $pad-scale2;
+    }
+    .Content__head{
+      margin-bottom: $pad-scale3;
+    }
+  }
+}

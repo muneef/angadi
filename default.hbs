@@ -21,24 +21,11 @@
 <body class="{{body_class}}">
 
     <div class="site-wrapper">
-
-        {{!-- All the main content gets inserted here, index.hbs, post.hbs, etc --}}
         {{{body}}}
 
         {{!-- The footer at the very bottom of the screen --}}
-        <div class="Content  Content--container">
-            <footer class="site-footer outer">
-                <div class="site-footer-content">
-                    <section class="copyright"><a href="{{@blog.url}}">{{@blog.title}}</a> &copy; {{date format="YYYY"}}</section>
-                    <nav class="site-footer-nav">
-                        <a href="{{@blog.url}}">Latest Posts</a>
-                        {{#if @blog.facebook}}<a href="{{facebook_url @blog.facebook}}" target="_blank">Facebook</a>{{/if}}
-                        {{#if @blog.twitter}}<a href="{{twitter_url @blog.twitter}}" target="_blank">Twitter</a>{{/if}}
-                        <a href="https://ghost.org" target="_blank">Ghost</a>
-                    </nav>
-                </div>
-            </footer>
-        </div>
+        {{> "footer"}}
+        
     </div>
 
     {{#if pagination.pages}}

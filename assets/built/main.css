@@ -1,65 +1,66 @@
-@import url(https://fonts.googleapis.com/css?family=Poppins);/* Base */
-
+@import url(https://fonts.googleapis.com/css?family=Poppins);
+/* Vars */
+/* Partials */
+/* Base */
+/*  Mixins */
+a {
+  color: blue;
+  text-decoration: none;    
+}
+h2 { color: #000; }
+p img { max-width: 100%; }
+hr {
+  width: 80%;
+  color: rgb(226, 226, 249);
+  border-bottom: 3px solid rgb(226, 226, 249) !important;
+  border: 0;
+  margin-left: 0;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
 body { 
-  margin:0;
+  margin: 0;
   font-family: 'Poppins', sans-serif;
 }
-
-/*  Content */
-
-/*  Content */
-
-.Content--container{  
-    max-width: 60em;  
-    margin-left: auto;  
-    margin-right: auto;
-  }
-
-.Content--container:before{  
-    content: '';  
-    display: table;
-  }
-
-.Content--container:after{  
-    content: '';  
-    display: table;  
-    clear: both;
-  }
-
-.Content__head{
-    margin-bottom: 4rem;
-  }
-
-.Content__head--link{
-      text-decoration: none;
-      border-bottom: solid 4px;
-    }
-
-.Content__title{
-    color: #fff;
-    font-weight: 600;
-    font-size: 59px;
-    min-width: 70%;
-    line-height: 1.15;
-  }
-
-/*  Post */
-
-.Post--full .Post__title {
-      margin-top: 1.5rem;
-      margin-bottom: 1.5rem;
-    }
-
-.Post__title{
-    font-size: 61px;
-    line-height: 1.25;    
-  }
-
-.Post__meta {
+/** Author */
+.Author__name{
+    font-size: 17px;
+    text-decoration: none;
+    border-bottom: 0;
+    padding-top: 4px;
     display: inline-block;
-    margin-top: 1.5rem;
   }
-
+/** Links */
+.Link--base{
+    font-size: 17px;
+    text-decoration: none;
+    padding-top: 4px;
+    border-bottom: 0;
+  }
+.Link--normal{
+    font-size: 17px;
+    text-decoration: none;
+    padding-top: 4px;
+    display: inline-block;
+  }
+.Link{
+  color: blue;
+  text-decoration: none;
+  border-bottom: solid 2px rgb(226, 226, 249);
+}
+/*  Footer */
+.Footer{
+  background-color: #eee;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  margin-top: 24px;
+}
+/*  Content */
+/** Blog */
+.Blog__link{
+    color: #444;
+    border-bottom: 0;
+  }
 /* Profile */
 .AuthorProfile__image{
     width: 32px;
@@ -67,22 +68,91 @@ body {
     display: inline-block;
     border-radius: 3em;
     vertical-align: top;
-    margin-right: 14px;
+    margin-right: 16px;
   }
-
+.InnerContent{
+  margin-top: 32px;
+}
+.Header{
+  background-color: blue;
+  color: #fff;
+  height: 127px;
+}
+.Header--inner{
+    background-color: blue;
+    color: #fff;
+    height: 100px;
+  }
+.Header--inner .Content__title{
+      color: #fff;
+      font-weight: 600;
+      font-size: 59px;
+      min-width: 70%;
+      line-height: 1.15;
+      font-size: 30px;
+      opacity: 0.7;
+      padding-top: 16px;
+    }
+.Header--inner .Content__head{
+      margin-bottom: 24px;
+    }
+.Content--container{
+    max-width: 60em;
+    margin-left: auto;
+    margin-right: auto;
+  }
+.Content--container:before{
+    content: '';
+    display: table;
+  }
+.Content--container:after{
+    content: '';
+    display: table;
+    clear: both;
+  }
+.Content__head{
+    margin-bottom: 32px;
+  }
+.Content__head--link{
+      text-decoration: none;
+      border-bottom: solid 4px;
+    }
+.Content__title{
+    color: #fff;
+    font-weight: 600;
+    font-size: 59px;
+    min-width: 70%;
+    line-height: 1.15;
+  }
+/*  Post */
+.Post--full .Post__title {
+      margin-top: 8px;
+      margin-bottom: 8px;
+    }
+.Post__content{
+    font-size: 20px;
+    line-height: 1.85;
+    color: #666;
+  }
+.Post__content a{
+      border-bottom: solid 2px rgb(226, 226, 249);
+    }
+.Post__title{
+    font-size: 61px;
+    line-height: 1.25;    
+  }
+.Post__meta {
+    display: inline-block;
+    margin-top: 1.5rem;
+  }
 /*  Post Card */
-
+.PostCard::last-child .PostCard__content {
+      border-bottom: 0;
+    }
 /* Author */
-
 .PostCard__author {
     font-size: 17px;
   }
-
-.PostCard__author a {
-    font-size: 17px;
-    text-decoration: none;
-  }
-
 .PostCard__title {
     text-decoration: none;
     border-bottom: 0;
@@ -94,72 +164,33 @@ body {
     /*font-size: 61px;*/
     line-height: 1.25;
   }
-
 .PostCard__link {
     text-decoration: none;
   }
-
 .PostCard__excerpt {
     color: #444;
     margin-top: 12px;
   }
-
 .PostCard__excerpt p {
       margin-top: 0;
     }
-
 .PostCard__tags {
     color: #999;
     margin-bottom: 4px;
     display: inline-block;
   }
-
 .PostCard__content {
-    margin-bottom: 4rem;
-    padding-bottom: 3rem;
+    margin-bottom: 32px;
+    padding-bottom: 32px;
     border-bottom: solid 3px #efefef;    
   }
-
 .PostCard__content:hover {
       border-bottom: solid 3px blue; 
     };
-
 .PostCard__content:hover .PostCard__tags {
         color: blue;
         opacity: 0.45;
       }
-
 .PostCard__content:hover .PostCard__title{
         color: blue;
       }
-
-.InnerContent{
-  margin-top: 2rem;
-}
-
-.Header{
-  background-color: blue;
-  color: #fff;
-  height: 127px;
-}
-
-.Header--inner{
-    background-color: blue;
-    color: #fff;
-    height: 100px;
-  }
-
-.Header--inner .Content__title{
-      color: #fff;
-      font-weight: 600;
-      font-size: 59px;
-      min-width: 70%;
-      line-height: 1.15;
-      font-size: 30px;
-      opacity: 0.7;
-      padding-top: 16px;
-    }
-
-.Header--inner .Content__head{
-      margin-bottom: 2rem;
-    }

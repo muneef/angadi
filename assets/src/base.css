@@ -1,0 +1,96 @@
+/* Base */
+@import url(https://fonts.googleapis.com/css?family=Poppins);
+
+/*  Mixins */
+a {
+  color: blue;
+  text-decoration: none;    
+}
+
+h2 { color: #000; }
+p img { max-width: 100%; }
+
+hr {
+  width: 80%;
+  color: rgb(226, 226, 249);
+  border-bottom: 3px solid rgb(226, 226, 249) !important;
+  border: 0;
+  margin-left: 0;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+body { 
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+@define-mixin transition $property: all, $time: 150ms, $easing: ease-out {
+  transition: $(property) $(time) $(easing);
+}
+
+/** Author */
+.Author{
+  &__name{
+    font-size: 17px;
+    text-decoration: none;
+    border-bottom: 0;
+    padding-top: 4px;
+    display: inline-block;
+  }
+}
+
+/** Links */
+.Link{
+  &--base{
+    font-size: 17px;
+    text-decoration: none;
+    padding-top: 4px;
+    border-bottom: 0;
+  }
+  &--normal{
+    font-size: 17px;
+    text-decoration: none;
+    padding-top: 4px;
+    display: inline-block;
+  }
+}
+
+.Link{
+  color: blue;
+  text-decoration: none;
+  border-bottom: solid 2px rgb(226, 226, 249);
+}
+
+/*  Footer */
+.Footer{
+  background-color: #eee;
+  padding-top: $pad-scale4;
+  padding-bottom: $pad-scale4;
+  margin-top: $pad-scale3;
+}
+/*  Content */
+
+/** Blog */
+.Blog{
+  &__link{
+    color: #444;
+    border-bottom: 0;
+  }
+}
+
+/* Profile */
+.AuthorProfile {
+  &__image{
+    width: 32px;
+    height: 32px;
+    display: inline-block;
+    border-radius: 3em;
+    vertical-align: top;
+    margin-right: $pad-scale2;
+  }
+}
+
+.InnerContent{
+  margin-top: $pad-scale4;
+}
