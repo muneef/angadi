@@ -4,6 +4,7 @@
   }
   &__head{
     margin-bottom: $pad-scale4;
+    display: inline-block;
     &--link{
       text-decoration: none;
       border-bottom: solid 4px;
@@ -15,5 +16,10 @@
     font-size: 59px;
     min-width: 70%;
     line-height: 1.15;
-  }  
+  }
+  &__navigation{
+    display: inline-block;
+    vertical-align: text-top;
+    float: right;
+  }
 }

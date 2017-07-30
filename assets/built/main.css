@@ -22,6 +22,16 @@ body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
 }
+/** Existing Tempalte  */
+ul.nav {
+  list-style: none;
+  margin-left: 0;
+  padding: 0;
+  padding-top: 2rem;
+}
+ul.nav a{
+    color: #fff;    
+  }
 /** Author */
 .Author__name{
     font-size: 17px;
@@ -96,6 +106,15 @@ body {
 .Header--inner .Content__head{
       margin-bottom: 24px;
     }
+.Header--inner .nav{
+      padding-top: 1rem;
+    }
+.Header__nav{
+    display: inline-block;
+  }
+.Header__nav a{
+      color: #fff;
+    }
 .Content--container{
     max-width: 60em;
     margin-left: auto;
@@ -112,6 +131,7 @@ body {
   }
 .Content__head{
     margin-bottom: 32px;
+    display: inline-block;
   }
 .Content__head--link{
       text-decoration: none;
@@ -123,6 +143,11 @@ body {
     font-size: 59px;
     min-width: 70%;
     line-height: 1.15;
+  }
+.Content__navigation{
+    display: inline-block;
+    vertical-align: text-top;
+    float: right;
   }
 /*  Post */
 .Post--full .Post__title {

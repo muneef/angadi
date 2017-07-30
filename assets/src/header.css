@@ -19,5 +19,15 @@
     .Content__head{
       margin-bottom: $pad-scale3;
     }
+    .nav{
+      padding-top: 1rem;
+    }
+  }
+
+  &__nav{
+    display: inline-block;
+    a{
+      color: #fff;
+    }
   }
 }

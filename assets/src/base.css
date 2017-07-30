@@ -29,6 +29,17 @@ body {
   transition: $(property) $(time) $(easing);
 }
 
+/** Existing Tempalte  */
+ul.nav {
+  list-style: none;
+  margin-left: 0;
+  padding: 0;
+  padding-top: 2rem;
+  a{
+    color: #fff;    
+  }
+}
+
 /** Author */
 .Author{
   &__name{
